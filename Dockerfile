@@ -12,4 +12,3 @@ VOLUME /data
 
 CMD ["./monitor.sh"]
 CMD ["chmod +x runcommand.sh"]
-CMD ["./runcommand.sh"]
