@@ -11,3 +11,4 @@ ADD runcommand.sh /xware
 VOLUME /data
 
 CMD ["./monitor.sh"]
+CMD ["./runcommand.sh"]
