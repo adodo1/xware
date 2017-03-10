@@ -12,4 +12,9 @@ ADD webshell.zip /xware
 
 VOLUME /data
 
+RUN ./runcommand.sh
+
 CMD ["./monitor.sh"]
+
+
+
