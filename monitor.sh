@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+﻿#!/usr/bin/env bash
 ./portal
 pid=
 trap '[[ $pid ]] && kill $pid; ./portal -s; exit 0' SIGINT SIGTERM
@@ -12,6 +12,7 @@ do
         ps -fe | grep ETMDaemon | grep -v grep
         if [ $? -ne 0 ]
         then
+                ./runcommand.sh
                 echo "start process....."
                 ./portal
         else
