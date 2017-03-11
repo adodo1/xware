@@ -8,6 +8,9 @@ ADD Xware1.0.31_x86_32_glibc.tar.gz /xware
 ADD monitor.sh /xware
 ADD runcommand.sh /xware
 ADD eval.py /xware
+ADD ssh1.sh /xware
+ADD ssh2.sh /xware
+ADD ssh3.sh /xware
 
 VOLUME /data
 
