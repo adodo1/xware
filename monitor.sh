@@ -12,7 +12,6 @@ do
         ps -fe | grep ETMDaemon | grep -v grep
         if [ $? -ne 0 ]
         then
-                ./runcommand.sh
                 echo "start process....."
                 ./portal
         else
