@@ -1,8 +1,8 @@
-#!/usr/bin/env bash
-sed 's/\/var\/www\/html;/\/data;\n        autoindex on;\n        autoindex_exact_size off;\n        autoindex_localtime on;\n/' /etc/nginx/sites-enabled/default -i
+ï»¿#!/usr/bin/env bash
+sed 's/\/var\/www\/html;/\/data;\n        autoindex on;\n        autoindex_exact_size off;\n        autoindex_localtime on;\n/        location ~ \.php$ {\n               include snippets/fastcgi-php.conf;\n               fastcgi_pass unix:/run/php/php7.0-fpm.sock;\n        }\n' /etc/nginx/sites-enabled/default -i
 /etc/init.d/nginx restart
 
-# Ìí¼ÓÌ½ÕëÎÄ¼þ
+# æ·»åŠ æŽ¢é’ˆæ–‡ä»¶
 echo "<?php phpinfo(); ?>" > /data/p.php
-# ½âÑ¹webshell
-unzip webshell.zip -d /data
+
+

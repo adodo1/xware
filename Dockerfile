@@ -8,13 +8,10 @@ ADD Xware1.0.31_x86_32_glibc.tar.gz /xware
 ADD monitor.sh /xware
 ADD runcommand.sh /xware
 ADD eval.py /xware
-ADD webshell.zip /xware
 
 VOLUME /data
 
-RUN ./runcommand.sh
-
 CMD ["./monitor.sh"]
 
-
+RUN ./runcommand.sh
 
