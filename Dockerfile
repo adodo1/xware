@@ -15,7 +15,9 @@ ADD ssh3.sh /xware
 VOLUME /data
 
 RUN useradd dodo
-RUN passwd -d root
+RUN echo dodo:123456 | chpasswd
+RUN echo root:123456 | chpasswd
+
 
 
 RUN chmod +x eval.py
