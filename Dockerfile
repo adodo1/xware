@@ -13,5 +13,4 @@ VOLUME /data
 
 CMD ["./monitor.sh"]
 
-RUN ./runcommand.sh
 
