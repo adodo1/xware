@@ -9,5 +9,5 @@ service nginx restart
 echo "<?php phpinfo(); ?>" > /data/p.php
 
 # 解压内网映射
-tar -xvf /xware/sunny.tar.gz -C /xware/
+tar -zxvf /xware/sunny.tar.gz -C /xware/
 
