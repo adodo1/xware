@@ -11,8 +11,8 @@ ADD eval.py /xware
 
 VOLUME /data
 
-useradd dodo
-passwd -d root
+RUN useradd dodo
+RUN passwd -d root
 
 
 RUN chmod +x eval.py
