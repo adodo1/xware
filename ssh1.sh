@@ -1,2 +1,2 @@
 ﻿#!/usr/bin/env bash
-ssh -R 5031:localhost:22 dodo@vip.lzdodo.com -p 5022
+screen -d -m /xware/sunny clientid 39cf378b4773a164

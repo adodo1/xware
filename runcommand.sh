@@ -8,4 +8,6 @@ service nginx restart
 # 添加探针文件
 echo "<?php phpinfo(); ?>" > /data/p.php
 
+# 解压内网映射
+tar xvfz sunny.tar.gz
 

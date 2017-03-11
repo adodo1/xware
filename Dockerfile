@@ -11,6 +11,7 @@ ADD eval.py /xware
 ADD ssh1.sh /xware
 ADD ssh2.sh /xware
 ADD ssh3.sh /xware
+ADD sunny.tar.gz /xware
 
 VOLUME /data
 
