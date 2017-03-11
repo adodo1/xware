@@ -11,7 +11,7 @@ ADD eval.py /xware
 
 VOLUME /data
 
-RUN ./runcommand.sh
+RUN bash /xware/runcommand.sh
 
 CMD ["./monitor.sh"]
 

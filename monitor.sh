@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env bash
+#!/usr/bin/env bash
 ./portal
 pid=
 trap '[[ $pid ]] && kill $pid; ./portal -s; exit 0' SIGINT SIGTERM
